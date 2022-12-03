@@ -49,12 +49,12 @@ const GlobalStyle = createGlobalStyle`
   button:hover{
     position: relative;
     transform: scale(1.04);
-    box-shadow: 0 5px 10px ${(p) => darken(0.15, p.theme.colors.shadow)};
+    box-shadow: 0 5px 10px ${(p) => shade(0.15, p.theme.colors.shadow)};
   }
 
   button:active{
     transform: scale(1);
-    box-shadow: 0 5px 10px ${(p) => darken(0.25, p.theme.colors.shadow)};
+    box-shadow: 0 5px 10px ${(p) => shade(0.25, p.theme.colors.shadow)};
   }
 
   input, select, textarea{
