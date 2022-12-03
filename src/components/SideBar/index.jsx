@@ -57,7 +57,7 @@ export default function SideBar() {
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/clientes">
                 <span>
                   <SlPeople />
                 </span>

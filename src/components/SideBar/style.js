@@ -20,7 +20,7 @@ const Container = styled.div`
     width: 100%;
   }
 
-  .other{
+  .other {
     width: 100%;
     height: 100vh;
   }
@@ -120,6 +120,12 @@ const Container = styled.div`
 
     to {
       width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .navigate a {
+      padding: 35px 10px;
     }
   }
 `;
