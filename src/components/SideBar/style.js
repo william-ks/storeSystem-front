@@ -123,9 +123,9 @@ const Container = styled.div`
     }
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (min-height: 760px) {
     .navigate a {
-      padding: 35px 10px;
+      padding: 30px 10px;
     }
   }
 `;
