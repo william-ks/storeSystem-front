@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   main{
     width: 100%;
     min-height: 100vh;
-    padding-left: 75px;
+    padding-left: 45px;
   }
 
   button{
