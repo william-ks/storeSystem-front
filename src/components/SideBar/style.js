@@ -20,6 +20,11 @@ const Container = styled.div`
     width: 100%;
   }
 
+  .other{
+    width: 100%;
+    height: 100vh;
+  }
+
   .sideBar {
     height: 100vh;
     width: 45px;
@@ -31,7 +36,7 @@ const Container = styled.div`
     box-shadow: 5px 0 10px ${(p) => p.theme.colors.shadow};
     overflow: hidden;
     transition: width 0.8s ease-in-out 0s;
-    max-width: 350px;
+    max-width: 250px;
   }
 
   .open {
