@@ -4,24 +4,15 @@ import Container from "./style";
 export default function Login() {
   return (
     <Container>
-      <div className="center">
-        <ChangeTheme />
-        <h1>Text</h1>
-        <a href="/">Link Pro</a>
-        <p>Texto aleatorio</p>
-        <button>Botão</button>
-        <input type="email" />
-        <select name="" id="">
-          <option value="">Teste</option>
-          <option value="">Teste</option>
-          <option value="">Teste</option>
-        </select>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-
-        <form action="">
-          <div className="teste">list</div>
-        </form>
-      </div>
+      <form onSubmit={null} className="loginForm">
+        <h2>Seja bem-vindo!</h2>
+        <p>Insira seu Email:</p>
+        <input type="email" placeholder="Example@email.com" />
+        <p>Insira a sua senha:</p>
+        <input type="password" placeholder="Senha" />
+        <a href="">Esqueceu a senha ?</a>
+        <button>Login</button>
+      </form>
     </Container>
   );
 }
