@@ -17,8 +17,8 @@ const Container = styled.button`
   }
 
   .boxChange {
-    width: 22px;
-    height: 75px;
+    width: 75px;
+    height: 22px;
     background-color: white;
     border: 1px solid rgb(250, 250, 250);
     border-radius: 55px;
@@ -37,10 +37,10 @@ const Container = styled.button`
     padding: 3.5px;
 
     position: absolute;
-    left: 50%;
-    top: 0;
+    left: 0%;
+    top: 50%;
 
-    transform: translate(-50%, -40%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
   }
 
   .lightToDark {
@@ -59,29 +59,29 @@ const Container = styled.button`
 
   @keyframes lightToDark {
     from {
-      top: 0%;
-      transform: translate(-50%, -40%) rotate(0);
+      left: 0%;
+      transform: translate(-50%, -50%) rotate(0);
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     }
 
     to {
-      top: 95%;
+      left: 95%;
       box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
-      transform: translate(-50%, -40%) rotate(360deg);
+      transform: translate(-50%, -50%) rotate(360deg);
     }
   }
 
   @keyframes darkToLight {
     from {
-      top: 95%;
+      left: 95%;
       box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
-      transform: translate(-50%, -40%) rotate(360deg);
+      transform: translate(-50%, -50%) rotate(360deg);
     }
 
     to {
-      top: 0%;
+      left: 0%;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-      transform: translate(-50%, -40%) rotate(0);
+      transform: translate(-50%, -50%) rotate(0);
     }
   }
 `;
