@@ -84,11 +84,6 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: 0 5px 12px ${(p) => p.theme.colors.shadow};
   }
 
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-
   ul{
     list-style-position: inside;
     list-style-type: none;
@@ -98,6 +93,12 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 200;
     color: ${(p) => p.theme.colors.text.secondary};
   }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
 
   h1, h2, h3, h4, h5, h6{
     font-weight: 300;
