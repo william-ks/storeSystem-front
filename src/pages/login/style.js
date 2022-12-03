@@ -10,13 +10,27 @@ const Container = styled.div`
     
     text-align: center;
 
+    h2{
+        font-weight: 700;
+        font-family: ${(p) => p.theme.fonts.roboto};
+        font-size: 1.75rem;
+    }
+
     p{
         text-align: left;
+        margin-bottom: -15px;
+    }
+
+    .loginFirstInput{
+        margin-bottom: 25px;
     }
 
     a{
         text-align: right;
         display: block;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        text-decoration: underline;
     }
 
     .loginForm {
@@ -24,12 +38,12 @@ const Container = styled.div`
         height: 100%;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 17px;
 
     }
 
     button{
-        width: clamp(100px, 80%, 300px);
+        width: clamp(100px, 75%, 300px);
         margin: 0 auto;
     }
 `;
