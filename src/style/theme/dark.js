@@ -27,5 +27,8 @@ export default {
     },
   },
 
-  fonts: {},
+  fonts: {
+    poppins: `'Poppins', sans-serif`,
+    roboto: `'Roboto Mono', monospace`,
+  },
 };

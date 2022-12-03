@@ -49,12 +49,12 @@ const GlobalStyle = createGlobalStyle`
   button:hover{
     position: relative;
     transform: scale(1.04);
-    box-shadow: 0 5px 10px ${(p) => darken(0.15, p.theme.colors.shadow)};
+    box-shadow: 0 5px 10px ${(p) => shade(0.15, p.theme.colors.shadow)};
   }
 
   button:active{
     transform: scale(1);
-    box-shadow: 0 5px 10px ${(p) => darken(0.25, p.theme.colors.shadow)};
+    box-shadow: 0 5px 10px ${(p) => shade(0.25, p.theme.colors.shadow)};
   }
 
   input, select, textarea{
@@ -84,11 +84,6 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: 0 5px 12px ${(p) => p.theme.colors.shadow};
   }
 
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-
   ul{
     list-style-position: inside;
     list-style-type: none;
@@ -98,6 +93,12 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 200;
     color: ${(p) => p.theme.colors.text.secondary};
   }
+  
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
 
   h1, h2, h3, h4, h5, h6{
     font-weight: 300;

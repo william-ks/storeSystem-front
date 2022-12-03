@@ -10,7 +10,7 @@ export default {
     background: "rgb(255, 255, 255)",
     backgroundDiv: "rgb(255, 255, 255)",
 
-    shadow: "rgba(0,0,0,0.1)",
+    shadow: "rgba(0,0,0,0.2)",
 
     text: {
       primary: "#2d2d2a",
