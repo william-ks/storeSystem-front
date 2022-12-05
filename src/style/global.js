@@ -31,6 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
   button{
     all: unset;
+    box-sizing: border-box;
     user-select: none;
     cursor: pointer;
     font-family: ${(p) => p.theme.fonts.roboto};
@@ -62,7 +63,7 @@ const GlobalStyle = createGlobalStyle`
     height: 45px;
     line-height: 45px;
     padding: 0 10px;
-    margin-top: 8px; 
+    margin-top: 2px; 
     border-radius: 8px;
     font-size: 0.9rem;
     
@@ -110,6 +111,16 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1280px;
     padding: 0 4%;
     margin: 0 auto;
+  }
+
+  .pageTitle {
+    user-select: none;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid ${(p) => p.theme.colors.primary};
+    box-shadow: 0 2px 10px ${(p) => p.theme.colors.shadow};
+    background-color: ${(p) => p.theme.colors.backgroundDiv};
   }
 `;
 
