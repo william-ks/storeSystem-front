@@ -14,6 +14,7 @@ const Container = styled.div`
     background-color: rgba(30, 30, 30, 0.2);
     backdrop-filter: blur(4px);
     box-shadow: 5px 0 10px ${(p) => p.theme.colors.shadow};
+    z-index: 999;
   }
 
   &&.show {
