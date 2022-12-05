@@ -1,17 +1,43 @@
-import ChangeTheme from "../../components/ChangeTheme";
+import { useState } from "react";
 import Container from "./style";
 
+
+
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function validations() {
+    return email.length > 0 && password.length > 0
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
+
   return (
     <Container>
-      <form onSubmit={null} className="loginForm">
+      <form onSubmit={handleSubmit} className="loginForm">
         <h2>Seja bem-vindo!</h2>
         <p>Email:</p>
-        <input type="email" placeholder="Example@email.com" required className="loginFirstInput"/>
+        <input 
+          type="email"
+          value={email}
+          placeholder="Example@email.com"
+          onChange={e => setEmail(e.target.value)} 
+          required 
+          className="loginFirstInput"
+        />
         <p>Senha:</p>
-        <input type="password" placeholder="Senha" required/>
+        <input 
+          type="password" 
+          value={password}
+          placeholder="Senha" 
+          onChange={e => setPassword(e.target.value)}
+          required
+        />
         <a href="">Esqueceu a senha?Clique aqui!</a>
-        <button>Login</button>
+        <button disabled={!validations()}>Login</button>
       </form>
     </Container>
   );
