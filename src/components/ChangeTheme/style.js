@@ -7,6 +7,7 @@ import sun from "./sun.svg";
 const Container = styled.button`
   && {
     all: unset;
+    box-sizing: border-box;
     display: inline-block;
     user-select: none;
   }

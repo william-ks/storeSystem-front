@@ -14,10 +14,16 @@ const Container = styled.div`
     background-color: rgba(30, 30, 30, 0.2);
     backdrop-filter: blur(4px);
     box-shadow: 5px 0 10px ${(p) => p.theme.colors.shadow};
+    z-index: 999;
   }
 
   &&.show {
     width: 100%;
+  }
+
+  .other {
+    width: 100%;
+    height: 100vh;
   }
 
   .sideBar {
@@ -31,7 +37,7 @@ const Container = styled.div`
     box-shadow: 5px 0 10px ${(p) => p.theme.colors.shadow};
     overflow: hidden;
     transition: width 0.8s ease-in-out 0s;
-    max-width: 350px;
+    max-width: 250px;
   }
 
   .open {
@@ -115,6 +121,12 @@ const Container = styled.div`
 
     to {
       width: 100%;
+    }
+  }
+
+  @media screen and (min-height: 760px) {
+    .navigate a {
+      padding: 30px 10px;
     }
   }
 `;

@@ -15,6 +15,7 @@ export default function SideBar() {
 
   return (
     <Container className={show ? "show" : ""}>
+      <div className="other" onClick={() => setShow(false)}></div>
       <aside className={`sideBar ${show ? "open" : "close"}`}>
         <div className="toogle">
           <span onClick={() => setShow(!show)}>
@@ -56,7 +57,7 @@ export default function SideBar() {
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/clientes">
                 <span>
                   <SlPeople />
                 </span>

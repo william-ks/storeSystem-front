@@ -7,7 +7,7 @@ export default {
     secondary: "#00D9C0",
     highlight: "#00D9C0",
 
-    background: "rgb(255, 255, 255)",
+    background: "rgb(250, 250, 250)",
     backgroundDiv: "rgb(255, 255, 255)",
 
     shadow: "rgba(0,0,0,0.2)",

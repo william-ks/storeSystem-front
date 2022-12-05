@@ -1,12 +1,14 @@
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
+import SideBar from "../components/SideBar";
 import { GeneralProvider } from "../context/GeneralProvider";
 import useUser from "../hooks/useUser";
+import Clients from "../pages/clients";
 
 import Login from "../pages/login";
 
 const SecureRoutes = ({ to }) => {
   const { token } = useUser();
-  return token ? <Outlet /> : <Navigate to={to} />;
+  return true ? <Outlet /> : <Navigate to={to} />;
 };
 
 export default function MainRoutes() {
@@ -18,12 +20,13 @@ export default function MainRoutes() {
         element={
           <>
             <GeneralProvider>
-              {/* <SideBar /> */}
+              <SideBar />
               <SecureRoutes to="/" />
             </GeneralProvider>
           </>
         }
       >
+        <Route exact path="/clientes" element={<Clients />} />
         <Route />
       </Route>
     </Routes>
