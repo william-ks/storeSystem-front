@@ -41,6 +41,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 10px;
     padding: 7px 35px;
     border-radius: 100px; 
+
+
     color: ${(p) => p.theme.colors.button.text};
     background: ${(p) => p.theme.colors.button.background};
     border: 1px solid ${(p) => lighten(0.15, p.theme.colors.button.background)};
@@ -111,16 +113,6 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1280px;
     padding: 0 4%;
     margin: 0 auto;
-  }
-
-  .pageTitle {
-    user-select: none;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 2rem;
-    border-bottom: 1px solid ${(p) => p.theme.colors.primary};
-    box-shadow: 0 2px 10px ${(p) => p.theme.colors.shadow};
-    background-color: ${(p) => p.theme.colors.backgroundDiv};
   }
 `;
 
