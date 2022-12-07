@@ -49,15 +49,19 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: 0 5px 10px ${(p) => shade(0.25, p.theme.colors.shadow)};
   }
   
-  button:hover{
+  button:not(:disabled):hover{
     position: relative;
     transform: scale(1.04);
     box-shadow: 0 5px 10px ${(p) => shade(0.15, p.theme.colors.shadow)};
   }
 
-  button:active{
+  button:not(:disabled):active{
     transform: scale(1);
     box-shadow: 0 5px 10px ${(p) => shade(0.25, p.theme.colors.shadow)};
+  }
+
+  button:disabled{
+    cursor: not-allowed;
   }
 
   input, select, textarea{
