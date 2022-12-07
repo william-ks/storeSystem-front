@@ -43,6 +43,7 @@ const Container = styled.li`
     left: -144px;
     top: -124px;
     width: 150px;
+    z-index: 99;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
