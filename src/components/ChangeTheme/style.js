@@ -12,6 +12,11 @@ const Container = styled.button`
     user-select: none;
   }
 
+  &&:hover {
+    transform: none;
+    box-shadow: inherit;
+  }
+
   .none {
     display: none;
   }

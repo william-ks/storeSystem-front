@@ -1,14 +1,27 @@
 import styled from "styled-components";
 import { shade } from "polished";
 
+const verifyTheme = (p) => {
+  return p.theme.title === "dark" ? p.theme.colors.shadow : "rgba(0,0,0,0.05)";
+};
+
 const Container = styled.li`
   && {
-    border-bottom: 1px solid gray;
-    padding: 20px 2%;
+    padding: 15px 2%;
+
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    border: 1px solid ${(p) => shade(0.08, p.theme.colors.backgroundDiv)};
+
+    cursor: pointer;
+
+    background-color: ${(p) => p.theme.colors.backgroundDiv};
+    border-radius: 10px;
+    box-shadow: 0 2px 10px ${(p) => verifyTheme(p)};
   }
 
   .name {
@@ -19,6 +32,11 @@ const Container = styled.li`
   .button {
     all: unset;
     color: inherit;
+  }
+
+  .button:hover {
+    transform: none;
+    box-shadow: none;
   }
 
   .buttons {
@@ -70,6 +88,11 @@ const Container = styled.li`
 
   .options button:hover {
     background-color: ${(p) => shade(0.25, p.theme.colors.backgroundDiv)};
+  }
+
+  .icons {
+    font-size: 1.5rem;
+    color: ${(p) => p.theme.colors.text.secondary};
   }
 `;
 

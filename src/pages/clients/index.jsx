@@ -27,7 +27,7 @@ export default function Clients() {
           </div>
           <NewClientBt onClick={() => setShowCreate(true)} />
 
-          <ul>
+          <ul className="list">
             <ClientCard />
             <ClientCard />
             <ClientCard />
