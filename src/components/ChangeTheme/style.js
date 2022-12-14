@@ -12,6 +12,11 @@ const Container = styled.button`
     user-select: none;
   }
 
+  &&:hover {
+    transform: none;
+    box-shadow: inherit;
+  }
+
   .none {
     display: none;
   }
@@ -34,13 +39,16 @@ const Container = styled.button`
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     width: 25px;
     height: 25px;
-    padding: 3.5px;
 
     position: absolute;
     left: 0%;
     top: 50%;
 
     transform: translate(-50%, -50%) rotate(0);
+  }
+
+  .boll img {
+    padding: 3.5px;
   }
 
   .lightToDark {

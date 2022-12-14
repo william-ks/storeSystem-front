@@ -13,7 +13,7 @@ export default {
     shadow: "rgba(0,0,15,0.8)",
 
     text: {
-      primary: "rgb(250,250,255)",
+      primary: "white",
       secondary: "rgb(225,225,225)",
     },
 

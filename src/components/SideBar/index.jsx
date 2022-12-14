@@ -41,7 +41,7 @@ export default function SideBar() {
               </Link>
             </li>
             <li>
-              <Link to="/">
+              <Link to="/inventario">
                 <span>
                   <BsBox />
                 </span>

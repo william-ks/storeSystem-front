@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import Container from "./style";
 import ClientCard from "./components/ClientCard";
-import CreateClients from "./subComponents/CreateEditModal";
+import CreateClients from "./components/CreateEditModal";
 import NewClientBt from "./components/newClientBt";
+import Header from "../../components/Header";
 
 export default function Clients() {
   const [showCreate, setShowCreate] = useState(false);
@@ -19,14 +20,14 @@ export default function Clients() {
     <>
       {showCreate && <CreateClients close={setShowCreate} />}
       <Container>
-        <h1 className="pageTitle">Clientes</h1>
+        <Header>Clientes</Header>
         <div className="center">
-          <header className="header">
+          <div className="header">
             <input type="text" placeholder="Pesquisar" />
-          </header>
+          </div>
           <NewClientBt onClick={() => setShowCreate(true)} />
 
-          <ul>
+          <ul className="list">
             <ClientCard />
             <ClientCard />
             <ClientCard />

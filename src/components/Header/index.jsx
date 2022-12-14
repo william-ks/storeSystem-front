@@ -3,7 +3,9 @@ import Container from "./style";
 export default function Header({ children }) {
   return (
     <Container>
-      <div className="center">{children}</div>
+      <div className="center">
+        <h1 className="pageTitle">{children}</h1>
+      </div>
     </Container>
   );
 }

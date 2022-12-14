@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
-import { FiMoreVertical } from "react-icons/fi";
-import { TbListDetails } from "react-icons/tb";
+import { CgOptions } from "react-icons/cg";
 import ConfirmModal from "../../../../components/ConfirmModal";
 import Detail from "../DetailModal";
 import Container from "./style";
@@ -24,34 +22,20 @@ export default function ClientCard() {
       {showDelete && <ConfirmModal close={setShowDelete} />}
       {showDetail && <Detail close={setShowDetail} />}
 
-      <Container>
-        <h4 className={`name`}>William</h4>
+      <Container onClick={() => setShowDetail(true)}>
+        <h4 className="name">William krisley</h4>
 
         <div className="buttons">
           <button
             className="button more"
             onClick={() => setShowOptions(!showOptions)}
-          >
-            <FiMoreVertical />
-          </button>
-
-          {showOptions && (
-            <div className="options" onClick={() => setShowOptions(false)}>
-              <button className="button" onClick={() => setShowDetail(true)}>
-                <TbListDetails /> <span>Detalhes</span>
-              </button>
-
-              <button className="button">
-                <AiOutlineEdit /> <span>Editar</span>
-              </button>
-
-              <button className="button" onClick={() => setShowDelete(true)}>
-                <AiOutlineDelete /> <span>Excluir</span>
-              </button>
-            </div>
-          )}
+          ></button>
         </div>
+
+        <CgOptions className="icons" />
       </Container>
     </>
   );
 }
+
+
